@@ -89,7 +89,7 @@ df_filtrado = df_ISO[
 df_filtrado['fecha'] = df_filtrado['fecha'].dt.strftime('%d-%m-%Y')
 df_filtrado=df_filtrado.drop(['nombre','tipo_de_servicio','asignacion'],axis=1)
 
-st.subheader("📋 Servicios Encontrados")
+st.subheader("📋 Servicios Encontrados IOSA")
 st.dataframe(df_filtrado.drop(['semana'], axis=1))
 
 # =========================
